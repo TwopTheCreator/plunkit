@@ -1,0 +1,38 @@
+[package]
+name = "plunkit"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.40", features = ["full"] }
+bytes = "1.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+mlua = { version = "0.9", features = ["lua54", "async", "serialize"] }
+wasmtime = { version = "25.0", features = ["async", "cranelift"] }
+axum = { version = "0.7", features = ["ws"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["fs", "cors"] }
+bevy_ecs = "0.14"
+uuid = { version = "1.10", features = ["v4", "serde"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+anyhow = "1.0"
+thiserror = "1.0"
+async-trait = "0.1"
+flate2 = "1.0"
+aes = "0.8"
+cfb8 = "0.8"
+rsa = "0.9"
+sha1 = "0.10"
+sha2 = "0.10"
+rand = "0.8"
+reqwest = { version = "0.12", features = ["json"] }
+base64 = "0.22"
+chrono = { version = "0.4", features = ["serde"] }
+futures = "0.3"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
