@@ -1,0 +1,17 @@
+# Deny all warnings by default
+warn = ["all"]
+
+# Allow some common exceptions
+allow = ["clippy::module_name_repetitions", "clippy::needless_return"]
+
+# Deny style issues
+deny = ["clippy::unwrap_used", "clippy::expect_used"]
+
+# Set lint levels for specific things
+warn = [
+    "clippy::pedantic",
+    "clippy::nursery",
+]
+
+# Enable cargo clippy checks on build
+cargo_clippy_warns = true
