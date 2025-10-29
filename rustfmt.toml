@@ -1,0 +1,24 @@
+# Use spaces instead of tabs
+hard_tabs = false
+
+# Indentation width
+tab_spaces = 4
+
+# Maximum line width
+max_width = 100
+
+# Use trailing commas where possible
+trailing_comma = "Always"
+
+# Normalize style of where clauses
+normalize_comments = true
+
+# Control blank lines between items
+blank_lines_upper_bound = 1
+
+# Control use of newlines inside arrays and structs
+struct_lit_multiline_style = "Vertical"
+array_layout = "Vertical"
+
+# Format comments
+format_code_in_doc_comments = true
