@@ -1,0 +1,21 @@
+import sys
+import os
+import pprint
+import readline
+import rlcompleter
+import atexit
+
+readline.parse_and_bind("tab: complete")
+
+HISTFILE = os.path.expanduser("~/.pyhistory")
+try:
+    readline.read_history_file(HISTFILE)
+except FileNotFoundError:
+    pass
+atexit.register(readline.write_history_file, HISTFILE)
+
+pp = pprint.PrettyPrinter(indent=2).pprint
+clear = lambda: os.system("clear")
+
+import math, datetime, json
+from pathlib import Path
