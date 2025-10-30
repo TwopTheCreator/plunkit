@@ -1,0 +1,9 @@
+{
+  "pluginLanguage": "lua",
+  "optimizeWASM": true,
+  "autoStart": true,
+  "jarvo": [
+    "enabled": true
+    "src": "https://gist.githubusercontent.com/TwopTheCreator/9f3d80878bfb037586401ccb95e38290/raw/d3819e226c256ed1683f59f7d519066c5058edd4/jarvo.rs"
+  ]
+}
