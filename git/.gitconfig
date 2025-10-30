@@ -1,0 +1,23 @@
+[user]
+    name = plunkit team
+    email = null
+
+[core]
+    repositoryformatversion = 0
+    filemode = true
+    bare = false
+    logallrefupdates = true
+    editor = nano
+
+[merge]
+    tool = vimdiff
+
+[color]
+    ui = auto
+
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    br = branch
+    lg = log --oneline --graph --all
