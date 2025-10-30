@@ -1,0 +1,14 @@
+[MASTER]
+ignore=venv,build
+extension-pkg-whitelist=
+
+[MESSAGES CONTROL]
+disable=C0114,C0115,C0116
+
+[FORMAT]
+max-line-length=100
+indent-string='    '
+
+[DESIGN]
+max-args=10
+max-locals=25
