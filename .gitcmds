@@ -1,0 +1,37 @@
+# .gitcmds
+
+# Quick add & commit
+gc() {
+    git add .
+    git commit -m "$1"
+}
+
+# Push current branch
+gp() {
+    git push origin "$(git branch --show-current)"
+}
+
+# Pull latest changes
+gpl() {
+    git pull origin "$(git branch --show-current)"
+}
+
+# Create a new branch and switch
+gcb() {
+    git checkout -b "$1"
+}
+
+# Merge a branch into current
+gm() {
+    git merge "$1"
+}
+
+# Show status in a fancy way
+gs() {
+    git status -sb
+}
+
+# List branches sorted by last commit
+glb() {
+    git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short)'
+}
