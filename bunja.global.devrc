@@ -1,0 +1,11 @@
+#Drizzle/ACTIVATE
+
+bunja = import "lib/Bunja" -as STR "Bunja"
+  require(-dir "ref" fetch -file "bunja.lock" in STR)
+bunja -glob default -c -dir cache -out -pop
+  -mode -force SCRIPT
+  function (
+   for (bunja) fetch -dir "lib/Bunja" require(this.mode in SCRIPT in -dir "lib/Bunja" -file_ext .rs)
+   else (return)
+  )
+bunja -mode -force -save -a -file_ext .conf
